@@ -5,6 +5,7 @@ Hi! This is my repository where I save solutions to problems, pet projects, and 
 
 This code performs THE SIMPLE MODEL OF FRANK ROSENBLATT.  
 
-![Visual Explanation](https://disk.yandex.ru/i/8zkQgll83A9i1A.png)  
+![Visual Explanation] ![image](https://github.com/user-attachments/assets/d2bdd34a-dcde-437f-bf1d-2d306bd68635)
+ 
 *(Optional: Add a caption here)*  
 
