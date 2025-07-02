@@ -2,7 +2,7 @@
 Hi! This is my repository where I save solutions to problems, pet projects, and code experiments. Here you can track my programming progress and find useful examples.
 
 
-## Explanation of the First Code  
+## Explanation of the First Code for AI
 
 This code performs how works fully connected AI with step activation function
                             (Полносвязная НС со ступенчатой активационной функцией).  
