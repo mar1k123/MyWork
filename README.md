@@ -19,3 +19,6 @@ This code performs how works fully connected AI with step activation function
 ![image](https://github.com/user-attachments/assets/eeeed56e-8329-4aca-b7e0-c9cfbf43d4c4)
 ![image](https://github.com/user-attachments/assets/5d745b40-4267-4463-b1e9-e2f969c5e428)
 
+### Explanation for the second picture in the second code:
+
+
