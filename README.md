@@ -11,3 +11,9 @@ This code performs how works fully connected AI with step activation function
 ![image](https://github.com/user-attachments/assets/7546f87a-6895-40ea-a5c7-2cb38eeda285)
 
 
+## Explanation of the Second Code for AI
+
+This code performs how works fully connected AI with step activation function
+                            (Полносвязная НС со ступенчатой активационной функцией).
+
+![image](https://github.com/user-attachments/assets/ddb222c4-f186-4587-9db6-f227eee4ea27)
