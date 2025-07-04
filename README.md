@@ -16,4 +16,5 @@ This code performs how works fully connected AI with step activation function
 This code performs how works fully connected AI with step activation function
                             (Полносвязная НС со ступенчатой активационной функцией).
 
-![image](https://github.com/user-attachments/assets/ddb222c4-f186-4587-9db6-f227eee4ea27)
+![image](https://github.com/user-attachments/assets/eeeed56e-8329-4aca-b7e0-c9cfbf43d4c4)
+
