@@ -4,7 +4,7 @@ Hi! This is my repository where I save solutions to problems, pet projects, and 
 
 ## Explanation of the First Code for AI
 
-This code performs how works fully connected AI with step activation function
+This code performs how works fully connected AI with step activation function (Perceptron)
                             (Полносвязная НС со ступенчатой активационной функцией).
 
 ![image](https://github.com/user-attachments/assets/5bb55581-8c8e-4631-95b5-1365c9f7f74c)
