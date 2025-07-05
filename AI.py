@@ -74,44 +74,66 @@ import matplotlib.pyplot as plt
 
 
 #'''Второй случай смещения образов '''
-N = 5  #кол-во образов для классов
-b = 3 # Это само смещение
+# N = 5  #кол-во образов для классов
+# b = 3 # Это само смещение
 
 
-x1 = np.random.random(N) #моделируем случайные величины по одной оси
-x2 = x1 + [np.random.randint(10)/10 for i in range(N)] + b
-C1 = [x1, x2]
-
-x1 = np.random.random(N)
-x2 = x1 - [np.random.randint(10)/10 for j in range(N)] - 0.1 + b
-C2 = [x1, x2]
-
-f = [0+b, 1+b] # прямая под 45 гр
-
-
-w2 = 0.5
-w3 = -b * w2 # автоматически вычисляем омегу 3, зная омегу 2
-w = np.array([-w2, w2, w3])
-for i in range(N): # Перебираем все образы для классов
-    x = np.array([C1[0][i], C1[1][i], 1])   # Можно менять C1 с С2
-    y = np.dot(w, x) # Вычисляем выходное значение y
-    if y >= 0:
-        print("Класс С1")
-    else:
-        print("Класс С2")
-
-plt.scatter(C1[0][:], C1[1][:], s = 10, c = "red") # Отображаем точки для первого класса
-plt.scatter(C2[0][:], C2[1][:], s = 10, c = "blue") # Отображаем точки для второго класса
-plt.plot(f) # Отображаем разделяющею прямую
-plt.grid(True)
-plt.show()
-
-
-
+# x1 = np.random.random(N) #моделируем случайные величины по одной оси
+# x2 = x1 + [np.random.randint(10)/10 for i in range(N)] + b
+# C1 = [x1, x2]
+#
+# x1 = np.random.random(N)
+# x2 = x1 - [np.random.randint(10)/10 for j in range(N)] - 0.1 + b
+# C2 = [x1, x2]
+#
+# f = [0+b, 1+b] # прямая под 45 гр
+#
+#
+# w2 = 0.5
+# w3 = -b * w2 # автоматически вычисляем омегу 3, зная омегу 2
+# w = np.array([-w2, w2, w3])
+# for i in range(N): # Перебираем все образы для классов
+#     x = np.array([C1[0][i], C1[1][i], 1])   # Можно менять C1 с С2
+#     y = np.dot(w, x) # Вычисляем выходное значение y
+#     if y >= 0:
+#         print("Класс С1")
+#     else:
+#         print("Класс С2")
+#
+# plt.scatter(C1[0][:], C1[1][:], s = 10, c = "red") # Отображаем точки для первого класса
+# plt.scatter(C2[0][:], C2[1][:], s = 10, c = "blue") # Отображаем точки для второго класса
+# plt.plot(f) # Отображаем разделяющею прямую
+# plt.grid(True)
+# plt.show()
 
 
 
+#'''Task XOR '''
+
+def act(x):
+    return 0 if x <= 0 else 1
+
+def go(C):
+    x = np.array([C[0], C[1], 1])
+    w1 = [1, 1, -1.5]
+    w2 = [1, 1, -0.5]
+    w_hidden = np.array([w1, w2])
+    w_out = np.array([-1, 1, -0.5])
+
+    summa = np.dot(w_hidden, x)
+    out = [act(x) for x in summa]
+    out.append(1)
+    out = np.array(out)
+
+    summa = np.dot(w_out, out)
+    y = act(summa)
+    return y
+
+C1 = [(1, 0), (0, 1)]
+C2 = [(0, 0), (1, 1)]
 
 
+print( go(C1[0]), go(C1[1]))
+print( go(C2[0]), go(C2[1]))
 
 
