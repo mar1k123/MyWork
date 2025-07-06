@@ -24,7 +24,7 @@ This code performs separation of classes of a linear separating plane
 Assume that all these images are shifted upward along the X₂ axis, meaning the situation looks like this – . If our line passes through the origin, then no matter how it is rotated, there will always be classification errors everywhere. Therefore, we need to add a bias term. That’s why in neural networks, an additional input is introduced for shifting the decision boundary (bias)—a threshold value that offsets our separating line. This additional input will always have a fixed value of +1 and its own weight. In this case, our line can be expressed in the following form:
 
 Оъяснение для второго случая:
-Предположим что все эти образы смещены вверх по оси X2, т.е картина такая - . Если нашая прямая будет проходить через начало координат, то как-бы она не была повернута, везде будут получаться ошибки классификации, т.е необходимо добавить смещение. Поэтому в НС дополнительно определяют еще один вход для смещения разделяющей гиперплоскости (bias),
+Предположим что все эти образы смещены вверх по оси X2, т.е картина такая - Если нашая прямая будет проходить через начало координат, то как-бы она не была повернута, везде будут получаться ошибки классификации, т.е необходимо добавить смещение. Поэтому в НС дополнительно определяют еще один вход для смещения разделяющей гиперплоскости (bias),
 т.е пороговое значение, которое смещает нашу разделяющею прямую. Дополнительный вход всегда будет иметь значение +1 и вес. И в этом случае наша прямая может быть записана в данном виде
 
 ### Task XOR
